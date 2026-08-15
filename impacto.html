@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impacto Social · O Ninho da Mariazinha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,650&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="Logótipo da Associação O Ninho da Mariazinha">
+    </a>
+    <div class="navlinks">
+      <a href="sobre.html">Sobre</a>
+      <a href="acoes.html">Ações</a>
+      <a href="impacto.html">Impacto Social</a>
+      <a href="noticias.html">Notícias</a>
+    </div>
+    <div class="nav-actions">
+      <button type="button" class="btn btn-solid" data-modal-open="modal-apoiar" style="padding:10px 20px;font-size:14px;">Apoie-nos</button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="sobre.html">Sobre</a>
+    <a href="acoes.html">Ações</a>
+    <a href="impacto.html">Impacto Social</a>
+    <a href="noticias.html">Notícias</a>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Impacto Social</p>
+    <h1>O impacto do nosso trabalho nas famílias que apoiamos</h1>
+    <p>Cada cabaz, cada refeição e cada visita representam mais do que um apoio pontual: são parte de um acompanhamento contínuo a famílias, idosos e pessoas em situação de sem-abrigo em Coimbra e na região de Ovar.</p>
+  </div>
+</section>
+<section class="page-section">
+  <div class="wrap">
+    <div class="stat-row">
+      <div class="stat"><span class="num">260</span><span class="lbl">pessoas apoiadas atualmente, entre Coimbra e Ovar</span></div>
+      <div class="stat"><span class="num">150+</span><span class="lbl">voluntários ativos que tornam este trabalho possível</span></div>
+      <div class="stat"><span class="num">1999</span><span class="lbl">ano em que começámos, e nunca mais parámos</span></div>
+    </div>
+    <div class="content-card">
+      <h3>Famílias credenciadas</h3>
+      <p>As famílias acompanhadas pela associação recebem mensalmente um cabaz alimentar completo, reforçado em datas comemorativas com produtos temáticos como chocolates na Páscoa ou folar no Natal. Este apoio regular ajuda a aliviar o orçamento familiar e a garantir que a alimentação não é motivo de preocupação adicional.</p>
+    </div>
+    <div class="content-card">
+      <h3>Pessoas em situação de sem-abrigo</h3>
+      <p>Através da entrega de refeições no CRESC e da distribuição feita em articulação com a Cozinha Económica, chegamos todas as semanas a pessoas em situação de sem-abrigo em Coimbra, oferecendo uma refeição quente e, muitas vezes, o único momento de atenção e proximidade humana do seu dia.</p>
+    </div>
+    <div class="content-card">
+      <h3>Idosos em maior fragilidade</h3>
+      <p>Acompanhamos também pessoas idosas em situação de isolamento, através de visitas regulares e do apoio alimentar, contribuindo para reduzir a solidão e garantir condições de vida mais dignas.</p>
+    </div>
+    <div class="chart-card" style="margin-top:24px;height:360px;display:flex;flex-direction:column;">
+      <h3 style="font-size:17px;margin-bottom:14px;">Evolução do número de famílias apoiadas</h3>
+      <div class="chart-canvas-wrap" style="position:relative;flex:1;min-height:0;">
+        <canvas id="impactChart"></canvas>
+      </div>
+      <p class="chart-caption">Dados ilustrativos, a substituir pela série real de famílias apoiadas por ano, fornecida pela associação.</p>
+    </div>
+  </div>
+</section>
+<footer id="contacto">
+  <div class="wrap">
+    <div class="footer-grid footer-grid-4">
+      <div>
+        <h4>O Ninho da Mariazinha</h4>
+        <p>Instituição Particular de Solidariedade Social · Coimbra, desde 1999</p>
+      </div>
+      <div>
+        <h4>Morada · Coimbra</h4>
+        <div class="footer-links">
+          <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=Estrada%20de%20Eiras%20n%C2%BA%2067%2C%20Coimbra%2C%20Portugal%2C%203025-069&FORM=FBKPL1&mkt=pt-BR&fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFWUWZBYTJTanJzSTl5VUpOc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkeAMzzldn3M7aod7VmQgZO0MHVsaG9sJc5rv_Pp_l0d0TvkujifLpFq2Ile_aem_R7mzMj0BmC3dVdnV1_wiUA" target="_blank" rel="noopener">Estrada de Eiras nº 67, Coimbra, Portugal, 3025-069</a>
+          <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
+        </div>
+      </div>
+      <div>
+        <h4>Morada · Sandelgas</h4>
+        <div class="footer-links">
+          <span>Rua do Chorão, 3020-485 São Martinho da Árvore</span>
+        </div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <div class="footer-links">
+          <span>+351 963 171 520 · Tirsa</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-grid" style="margin-top:-16px;">
+      <div>
+        <h4>Redes sociais</h4>
+        <div class="footer-links" style="flex-direction:row;gap:20px;">
+          <a href="https://www.instagram.com/oninhodamariazinha/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/ONinhodaMariazinha" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Associação O Ninho da Mariazinha. Todos os direitos reservados. · <a href="privacidade.html" style="text-decoration:underline;">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modal-apoiar" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-apoiar-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
+    <h3 id="modal-apoiar-title">Como pode apoiar-nos</h3>
+    <p class="modal-lead">Escolha o perfil que melhor se aplica a si para ver as formas de apoio disponíveis.</p>
+
+    <div class="toggle-group" role="tablist" aria-label="Tipo de apoiante">
+      <button type="button" class="toggle-btn is-active" data-toggle-target="pessoa" role="tab" aria-selected="true">Pessoa singular</button>
+      <button type="button" class="toggle-btn" data-toggle-target="empresa" role="tab" aria-selected="false">Empresa</button>
+    </div>
+
+    <div class="toggle-panel" data-panel="pessoa">
+      <div class="modal-option">
+        <h4>Donativo monetário</h4>
+        <p>Transferência bancária (IBAN a confirmar) ou MB WAY. Qualquer valor faz a diferença no apoio a famílias, idosos e pessoas em situação de sem-abrigo.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Donativo de alimentos</h4>
+        <p>Pode entregar bens alimentares não perecíveis na nossa sede, em Coimbra. Recomendamos contactar-nos antes por email para combinar o melhor horário de entrega.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Voluntariado</h4>
+        <p>Dedique parte do seu tempo às nossas ações regulares. <a href="voluntariado.html">Saiba como ser voluntário</a>.</p>
+      </div>
+    </div>
+
+    <div class="toggle-panel" data-panel="empresa" hidden>
+      <div class="modal-option">
+        <h4>Mecenato empresarial</h4>
+        <p>Parcerias regulares de apoio financeiro ou em espécie, com benefícios fiscais associados ao mecenato social. Contacte-nos para conhecer as condições.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Doação de bens ou serviços</h4>
+        <p>Alimentos, equipamentos ou serviços úteis à nossa atividade diária, entregues na nossa sede ou recolhidos por acordo prévio.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Voluntariado corporativo</h4>
+        <p>Organize com a sua equipa uma ação de voluntariado junto da associação, em datas a combinar.</p>
+      </div>
+    </div>
+
+    <p class="modal-note">Para conhecer todas as formas de apoio em detalhe, visite a nossa <a href="apoiar.html">página de Apoie-nos</a>.</p>
+
+    <div class="modal-contact-footer">
+      <p class="modal-note" style="margin-top:0;">Tem dúvidas ou questões? Contacte-nos:</p>
+      <div class="modal-contact-links">
+        <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
+        <a href="https://wa.me/351963171520" target="_blank" rel="noopener">WhatsApp: +351 963 171 520</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

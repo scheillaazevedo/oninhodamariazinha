@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Ninho da Mariazinha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,450;9..144,560;9..144,650&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="Logótipo da Associação O Ninho da Mariazinha">
+    </a>
+    <div class="navlinks">
+      <a href="sobre.html">Sobre</a>
+      <a href="acoes.html">Ações</a>
+      <a href="impacto.html">Impacto Social</a>
+      <a href="noticias.html">Notícias</a>
+    </div>
+    <div class="nav-actions">
+      <button type="button" class="btn btn-solid" data-modal-open="modal-apoiar" style="padding:10px 20px;font-size:14px;">Apoie-nos</button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="sobre.html">Sobre</a>
+    <a href="acoes.html">Ações</a>
+    <a href="impacto.html">Impacto Social</a>
+    <a href="noticias.html">Notícias</a>
+  </div>
+</header>
+<section class="hero">
+<div class="wrap">
+<div>
+<p class="eyebrow">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
+        IPSS · Coimbra, desde 1999
+      </p>
+<h1>Cada família que ajudamos começou por um gesto simples.</h1>
+<p>Somos uma instituição de solidariedade social sem fins lucrativos, sem apoio estatal, sustentada por voluntários, doações e parcerias locais. Apoiamos famílias, idosos e pessoas em situação de sem-abrigo em Coimbra e na região de Ovar.</p>
+<div class="hero-actions">
+<a class="btn btn-solid" href="acoes.html">Conhecer o trabalho</a>
+<a class="btn btn-outline" href="voluntariado.html">Seja voluntário</a>
+</div>
+</div>
+<div class="hero-visual">
+<div class="slider" id="heroSlider">
+<div class="slider-dots" id="heroSliderDots"></div>
+<img alt="Voluntária serve sopa com um sorriso, junto a tigelas em fila" class="slide active" src="images/hero-sopa.jpg"/>
+<img alt="Voluntária descasca fruta para a confeção das refeições" class="slide" src="images/hero-fruta.jpg"/>
+<img alt="Voluntários servem refeições em recipientes individuais" class="slide" src="images/hero-refeicoes.jpg"/>
+<img alt="Voluntários preparam sacos com pão e fruta para os cabazes" class="slide" src="images/hero-cabazes.jpg"/>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sobre-acoes">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
+        O que fazemos
+      </p>
+<h2>Três formas de chegar a quem precisa</h2>
+</div>
+<div class="cards3">
+<div class="card">
+<svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M4 10h16l-1.5 9a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 10Z"></path><path d="M9 10a3 3 0 0 1 6 0"></path></svg>
+<h3>Sopa da Mariazinha</h3>
+<p>Confeção e distribuição de refeições quentes aos sábados, no Centro de Reforço Solidário de Coimbra, com equipas de voluntários que se revezam semanalmente.</p>
+</div>
+<div class="card">
+<svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><rect height="12" rx="1.5" width="16" x="4" y="8"></rect><path d="M4 8l3-4h10l3 4"></path><path d="M9 12v4M15 12v4"></path></svg>
+<h3>Cabazes alimentares</h3>
+<p>Entrega mensal de cabazes com bens não perecíveis, fruta, legumes, carne e peixe a famílias carenciadas acompanhadas pela associação.</p>
+</div>
+<div class="card">
+<svg class="icon" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><rect height="15" rx="1.5" width="17" x="3.5" y="5.5"></rect><path d="M3.5 10h17M8 3.5v4M16 3.5v4"></path></svg>
+<h3>Eventos e angariações</h3>
+<p>Campanhas de angariação de bens em estabelecimentos comerciais e eventos comunitários ao longo do ano, com o apoio de empresas e voluntários da região.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="impacto" id="impacto">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
+        Impacto
+      </p>
+<h2>Um trabalho que cresce com quem o apoia</h2>
+</div>
+<div class="stat-row">
+<div class="stat"><span class="num">150+</span><span class="lbl">voluntários ativos, entre Coimbra e Ovar</span></div>
+<div class="stat"><span class="num">1999</span><span class="lbl">ano de fundação da associação</span></div>
+<div class="stat"><span class="num">260</span><span class="lbl">pessoas apoiadas atualmente, entre Coimbra e Ovar</span></div>
+</div>
+<div class="impact-row">
+<div class="chart-card">
+<div class="chart-canvas-wrap">
+<canvas id="impactChart"></canvas>
+</div>
+<p class="chart-caption">Dados ilustrativos, a substituir pela série real de famílias apoiadas por ano, fornecida pela associação.</p>
+<a href="impacto.html" style="display:inline-block;margin-top:12px;font-size:13.5px;font-weight:600;color:var(--green-dark);text-decoration:underline;">Ver impacto social completo →</a>
+</div>
+<img alt="Voluntárias preparam refeições em tabuleiros individuais" src="images/impacto-tabuleiros.jpg"/>
+<img alt="Caixotes de fruta e legumes doados, prontos para os cabazes" src="images/impacto-caixotes.jpg"/>
+</div>
+</div>
+</section>
+
+<section class="apoie" id="apoiar">
+<div class="wrap">
+<div>
+<p class="eyebrow">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
+        Apoie-nos
+      </p>
+<h2>Sem apoio do Estado, o que sustenta este trabalho é quem decide ajudar.</h2>
+<button class="btn btn-solid" data-modal-open="modal-apoiar" type="button">Doar agora</button>
+</div>
+<ul>
+<li>
+<svg fill="none" height="20" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg>
+<span><strong>Donativo monetário</strong><br/>Transferência bancária ou multibanco, com recibo disponível a pedido.</span>
+</li>
+<li>
+<svg fill="none" height="20" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg>
+<span><strong>Donativo em bens</strong><br/>Alimentos, roupa ou outros bens entregues na sede de Coimbra ou na delegação de Ovar.</span>
+</li>
+<li>
+<svg fill="none" height="20" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg>
+<span><strong>Mecenato empresarial</strong><br/>Parcerias regulares com supermercados, restaurantes e empresas da região.</span>
+</li>
+</ul>
+</div>
+</section>
+
+<section class="voluntario" id="voluntario">
+<div class="wrap">
+<div>
+<p class="quote">"Comecei por dar uma tarde de sábado. Continuei porque percebi que aquela sopa é, para muitas pessoas, a única refeição quente da semana."</p>
+<p class="quote-by">Voluntária do Ninho da Mariazinha, Coimbra</p>
+<p style="font-size:12px;color:#9FBB95;margin-top:10px;">Testemunho ilustrativo, a substituir por um relato real.</p>
+</div>
+<div>
+<p class="eyebrow">Seja voluntário</p>
+<p class="lead">Não é preciso experiência, apenas disponibilidade. Há equipas aos sábados, na confeção de refeições, na distribuição de cabazes e no apoio administrativo.</p>
+<button class="btn btn-solid" data-modal-open="modal-voluntario" type="button">Quero ser voluntário</button>
+</div>
+</div>
+</section>
+
+<section id="noticias">
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
+        Atualidade
+      </p>
+<h2>Últimas notícias</h2>
+</div>
+<div class="news3">
+<a class="news-card" href="https://www.diariocoimbra.pt/2026/03/09/ninho-da-mariazinha-soma-20-anos-de-solidariedade/" rel="noopener" target="_blank">
+<img alt="Voluntários e dirigentes celebram os 20 anos da associação com bolo e balões" src="images/noticia-20-anos.jpg"/>
+<div class="news-body">
+<div class="news-source">Diário de Coimbra</div>
+<h3>Ninho da Mariazinha celebra 20 anos de solidariedade</h3>
+<p>A associação assinalou o aniversário na entrega semanal de refeições no CRESC, com bolo e balões a marcar duas décadas de apoio a famílias, idosos e pessoas sem-abrigo em Coimbra.</p>
+</div>
+</a>
+<a class="news-card" href="https://www.facebook.com/100064471163072/photos/983875583771471/" rel="noopener" target="_blank">
+<img alt="Voluntárias junto a carrinhos de donativos recolhidos numa loja Pingo Doce" src="images/caravana-pingo-doce.jpg"/>
+<div class="news-body">
+<div class="news-source">Publicação interna</div>
+<h3>Peditório solidário reuniu doações no Pingo Doce</h3>
+<p>Voluntárias estiveram à porta de uma loja Pingo Doce a recolher donativos alimentares para reforçar os cabazes mensais entregues às famílias apoiadas.</p>
+</div>
+</a>
+<a class="news-card" href="https://www.facebook.com/photo/?fbid=1488457719979919&amp;set=pcb.1488462066646151" rel="noopener" target="_blank">
+<img alt="Voluntária prepara legumes na cozinha para a Sopa da Mariazinha" src="images/sopa-legumes.jpg"/>
+<div class="news-body">
+<div class="news-source">Publicação interna</div>
+<h3>Voluntários preparam mais uma edição da Sopa da Mariazinha</h3>
+<p>Na cozinha de Sandelgas, uma equipa lava e prepara os legumes que, ao sábado, se transformam nas refeições quentes distribuídas no CRESC.</p>
+</div>
+</a>
+</div>
+<div style="text-align:center;margin-top:32px;">
+<a class="btn btn-outline" href="noticias.html">Ver todas as notícias</a>
+</div>
+</div>
+</section>
+
+<section class="insta">
+<div class="wrap">
+<div class="head-row">
+<div>
+<p class="eyebrow">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
+          No terreno
+        </p>
+<h2 style="margin-bottom:0;">Siga o nosso dia a dia no Instagram</h2>
+</div>
+<a class="btn btn-outline" href="https://www.instagram.com/oninhodamariazinha/" rel="noopener" target="_blank">Seguir no Instagram</a>
+</div>
+<div class="insta-grid">
+<img alt="Cabazes alimentares prontos para entrega" src="images/insta-cabazes.jpg"/>
+<img alt="Equipa de voluntários reunida antes de uma ação" src="images/insta-equipa.jpg"/>
+<img alt="Doces e pastelaria doados para distribuição" src="images/insta-doces.jpg"/>
+<img alt="Sala de armazém com sacos de donativos organizados" src="images/insta-armazem.jpg"/>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="section-head">
+<p class="eyebrow">Parceiros e mecenas</p>
+<h2 style="font-size:22px;">Empresas e instituições que tornam este trabalho possível</h2>
+</div>
+<div class="partners-grid">
+<div class="partner-box">Parceiro</div>
+<div class="partner-box">Parceiro</div>
+<div class="partner-box">Parceiro</div>
+<div class="partner-box">Parceiro</div>
+<div class="partner-box">Parceiro</div>
+</div>
+</div>
+</section>
+<footer id="contacto">
+  <div class="wrap">
+    <div class="footer-grid footer-grid-4">
+      <div>
+        <h4>O Ninho da Mariazinha</h4>
+        <p>Instituição Particular de Solidariedade Social · Coimbra, desde 1999</p>
+      </div>
+      <div>
+        <h4>Morada · Coimbra</h4>
+        <div class="footer-links">
+          <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=Estrada%20de%20Eiras%20n%C2%BA%2067%2C%20Coimbra%2C%20Portugal%2C%203025-069&FORM=FBKPL1&mkt=pt-BR&fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFWUWZBYTJTanJzSTl5VUpOc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkeAMzzldn3M7aod7VmQgZO0MHVsaG9sJc5rv_Pp_l0d0TvkujifLpFq2Ile_aem_R7mzMj0BmC3dVdnV1_wiUA" target="_blank" rel="noopener">Estrada de Eiras nº 67, Coimbra, Portugal, 3025-069</a>
+          <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
+        </div>
+      </div>
+      <div>
+        <h4>Morada · Sandelgas</h4>
+        <div class="footer-links">
+          <span>Rua do Chorão, 3020-485 São Martinho da Árvore</span>
+        </div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <div class="footer-links">
+          <span>+351 963 171 520 · Tirsa</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-grid" style="margin-top:-16px;">
+      <div>
+        <h4>Redes sociais</h4>
+        <div class="footer-links" style="flex-direction:row;gap:20px;">
+          <a href="https://www.instagram.com/oninhodamariazinha/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/ONinhodaMariazinha" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Associação O Ninho da Mariazinha. Todos os direitos reservados. · <a href="privacidade.html" style="text-decoration:underline;">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
+<div class="modal-overlay" id="modal-apoiar" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-apoiar-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
+    <h3 id="modal-apoiar-title">Como pode apoiar-nos</h3>
+    <p class="modal-lead">Escolha o perfil que melhor se aplica a si para ver as formas de apoio disponíveis.</p>
+
+    <div class="toggle-group" role="tablist" aria-label="Tipo de apoiante">
+      <button type="button" class="toggle-btn is-active" data-toggle-target="pessoa" role="tab" aria-selected="true">Pessoa singular</button>
+      <button type="button" class="toggle-btn" data-toggle-target="empresa" role="tab" aria-selected="false">Empresa</button>
+    </div>
+
+    <div class="toggle-panel" data-panel="pessoa">
+      <div class="modal-option">
+        <h4>Donativo monetário</h4>
+        <p>Transferência bancária (IBAN a confirmar) ou MB WAY. Qualquer valor faz a diferença no apoio a famílias, idosos e pessoas em situação de sem-abrigo.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Donativo de alimentos</h4>
+        <p>Pode entregar bens alimentares não perecíveis na nossa sede, em Coimbra. Recomendamos contactar-nos antes por email para combinar o melhor horário de entrega.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Voluntariado</h4>
+        <p>Dedique parte do seu tempo às nossas ações regulares. <a href="voluntariado.html">Saiba como ser voluntário</a>.</p>
+      </div>
+    </div>
+
+    <div class="toggle-panel" data-panel="empresa" hidden>
+      <div class="modal-option">
+        <h4>Mecenato empresarial</h4>
+        <p>Parcerias regulares de apoio financeiro ou em espécie, com benefícios fiscais associados ao mecenato social. Contacte-nos para conhecer as condições.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Doação de bens ou serviços</h4>
+        <p>Alimentos, equipamentos ou serviços úteis à nossa atividade diária, entregues na nossa sede ou recolhidos por acordo prévio.</p>
+      </div>
+      <div class="modal-option">
+        <h4>Voluntariado corporativo</h4>
+        <p>Organize com a sua equipa uma ação de voluntariado junto da associação, em datas a combinar.</p>
+      </div>
+    </div>
+
+    <p class="modal-note">Para conhecer todas as formas de apoio em detalhe, visite a nossa <a href="apoiar.html">página de Apoie-nos</a>.</p>
+
+    <div class="modal-contact-footer">
+      <p class="modal-note" style="margin-top:0;">Tem dúvidas ou questões? Contacte-nos:</p>
+      <div class="modal-contact-links">
+        <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
+        <a href="https://wa.me/351963171520" target="_blank" rel="noopener">WhatsApp: +351 963 171 520</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
