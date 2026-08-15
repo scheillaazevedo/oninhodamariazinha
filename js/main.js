@@ -157,4 +157,13 @@
       if (confirm) confirm.style.display = 'block';
     });
   }
+
+  // Carrega o rodapé partilhado a partir de partials/footer.html
+  fetch('partials/footer.html')
+    .then(r => r.text())
+    .then(html => {
+      const placeholder = document.getElementById('footer-placeholder');
+      if (placeholder) placeholder.outerHTML = html;
+    })
+    .catch(() => {});
 })();
