@@ -23,7 +23,7 @@
       <a href="noticias.html">Notícias</a>
     </div>
     <div class="nav-actions">
-      <button type="button" class="btn btn-solid" data-modal-open="modal-apoiar" style="padding:10px 20px;font-size:14px;">Apoie-nos</button>
+      <button type="button" class="btn btn-solid btn-nav" data-modal-open="modal-apoiar">Apoie-nos</button>
       <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -111,7 +111,7 @@
 <canvas id="impactChart"></canvas>
 </div>
 <p class="chart-caption">Dados ilustrativos, a substituir pela série real de famílias apoiadas por ano, fornecida pela associação.</p>
-<a href="impacto.html" style="display:inline-block;margin-top:12px;font-size:13.5px;font-weight:600;color:var(--green-dark);text-decoration:underline;">Ver impacto social completo →</a>
+<a href="impacto.html" class="link-more">Ver impacto social completo →</a>
 </div>
 <img alt="Voluntárias preparam refeições em tabuleiros individuais" src="images/impacto-tabuleiros.jpg"/>
 <img alt="Caixotes de fruta e legumes doados, prontos para os cabazes" src="images/impacto-caixotes.jpg"/>
@@ -151,7 +151,7 @@
 <div>
 <p class="quote">"Comecei por dar uma tarde de sábado. Continuei porque percebi que aquela sopa é, para muitas pessoas, a única refeição quente da semana."</p>
 <p class="quote-by">Voluntária do Ninho da Mariazinha, Coimbra</p>
-<p style="font-size:12px;color:#9FBB95;margin-top:10px;">Testemunho ilustrativo, a substituir por um relato real.</p>
+<p class="quote-note">Testemunho ilustrativo, a substituir por um relato real.</p>
 </div>
 <div>
 <p class="eyebrow">Seja voluntário</p>
@@ -196,7 +196,7 @@
 </div>
 </a>
 </div>
-<div style="text-align:center;margin-top:32px;">
+<div class="text-center mt-32">
 <a class="btn btn-outline" href="noticias.html">Ver todas as notícias</a>
 </div>
 </div>
@@ -210,7 +210,7 @@
 <svg fill="none" height="18" stroke="currentColor" stroke-width="1.6" viewbox="0 0 24 24" width="18"><ellipse cx="12" cy="16" rx="9" ry="5"></ellipse><circle cx="9" cy="15" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="12" cy="14" fill="currentColor" r="1.4" stroke="none"></circle><circle cx="15" cy="15" fill="currentColor" r="1.4" stroke="none"></circle></svg>
           No terreno
         </p>
-<h2 style="margin-bottom:0;">Siga o nosso dia a dia no Instagram</h2>
+<h2 class="mb-0">Siga o nosso dia a dia no Instagram</h2>
 </div>
 <a class="btn btn-outline" href="https://www.instagram.com/oninhodamariazinha/" rel="noopener" target="_blank">Seguir no Instagram</a>
 </div>
@@ -227,7 +227,7 @@
 <div class="wrap">
 <div class="section-head">
 <p class="eyebrow">Parceiros e mecenas</p>
-<h2 style="font-size:22px;">Empresas e instituições que tornam este trabalho possível</h2>
+<h2 class="h2-sm">Empresas e instituições que tornam este trabalho possível</h2>
 </div>
 <div class="partners-grid">
 <div class="partner-box">Parceiro</div>
@@ -238,7 +238,9 @@
 </div>
 </div>
 </section>
+
 <div id="footer-placeholder"></div>
+
 <div class="modal-overlay" id="modal-apoiar" aria-hidden="true">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-apoiar-title">
     <button type="button" class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
@@ -283,12 +285,21 @@
     <p class="modal-note">Para conhecer todas as formas de apoio em detalhe, visite a nossa <a href="apoiar.html">página de Apoie-nos</a>.</p>
 
     <div class="modal-contact-footer">
-      <p class="modal-note" style="margin-top:0;">Tem dúvidas ou questões? Contacte-nos:</p>
+      <p class="modal-note">Tem dúvidas ou questões? Contacte-nos:</p>
       <div class="modal-contact-links">
         <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
         <a href="https://wa.me/351963171520" target="_blank" rel="noopener">WhatsApp: +351 963 171 520</a>
       </div>
     </div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-voluntario" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-voluntario-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
+    <h3 id="modal-voluntario-title">Quero ser voluntário</h3>
+    <p class="modal-lead">O primeiro passo é preencher um formulário breve, para conhecermos a sua disponibilidade e áreas de interesse. Depois de enviar, a nossa equipa entrará em contacto consigo.</p>
+    <a class="btn btn-solid btn-block" href="https://forms.gle/SUBSTITUIR-PELO-LINK-DO-FORMULARIO-GOOGLE" target="_blank" rel="noopener">Preencher formulário</a>
+    <p class="modal-note">Prefere falar diretamente connosco? Escreva para <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a> ou envie mensagem para o WhatsApp <a href="https://wa.me/351963171520" target="_blank" rel="noopener">+351 963 171 520</a>.</p>
   </div>
 </div>
 <script src="js/main.js"></script>

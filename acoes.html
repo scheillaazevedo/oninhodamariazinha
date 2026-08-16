@@ -22,7 +22,7 @@
       <a href="noticias.html">Notícias</a>
     </div>
     <div class="nav-actions">
-      <button type="button" class="btn btn-solid" data-modal-open="modal-apoiar" style="padding:10px 20px;font-size:14px;">Apoie-nos</button>
+      <button type="button" class="btn btn-solid btn-nav" data-modal-open="modal-apoiar">Apoie-nos</button>
       <button type="button" class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -46,7 +46,7 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Atividades regulares</p>
-      <h2 style="font-size:24px;">O que fazemos, semana após semana</h2>
+      <h2 class="h2-md">O que fazemos, semana após semana</h2>
     </div>
 
     <div class="activity-card">
@@ -95,7 +95,7 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Ver para acreditar</p>
-      <h2 style="font-size:24px;">Conheça o nosso trabalho em vídeo</h2>
+      <h2 class="h2-md">Conheça o nosso trabalho em vídeo</h2>
     </div>
     <div class="video-frame">
       <iframe src="https://www.youtube.com/embed/vOc7IPWO5_0" title="Vídeo institucional O Ninho da Mariazinha" allowfullscreen></iframe>
@@ -104,53 +104,15 @@
 </section>
 
 <section class="page-section">
-  <div class="wrap" style="text-align:center;">
-    <h2 style="font-size:22px;">Quer fazer parte desta equipa?</h2>
-    <p style="color:var(--ink-muted);max-width:56ch;margin:0 auto 24px;">Há sempre lugar para mais uma pessoa disposta a ajudar, seja aos sábados, na Caravana Solidária ou na preparação dos cabazes.</p>
+  <div class="wrap text-center">
+    <h2 class="h2-sm">Quer fazer parte desta equipa?</h2>
+    <p class="section-cta-text">Há sempre lugar para mais uma pessoa disposta a ajudar, seja aos sábados, na Caravana Solidária ou na preparação dos cabazes.</p>
     <button type="button" class="btn btn-solid" data-modal-open="modal-voluntario">Quero ser voluntário</button>
   </div>
 </section>
-<footer id="contacto">
-  <div class="wrap">
-    <div class="footer-grid footer-grid-4">
-      <div>
-        <h4>O Ninho da Mariazinha</h4>
-        <p>Instituição Particular de Solidariedade Social · Coimbra, desde 1999</p>
-      </div>
-      <div>
-        <h4>Morada · Coimbra</h4>
-        <div class="footer-links">
-          <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=Estrada%20de%20Eiras%20n%C2%BA%2067%2C%20Coimbra%2C%20Portugal%2C%203025-069&FORM=FBKPL1&mkt=pt-BR&fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFWUWZBYTJTanJzSTl5VUpOc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkeAMzzldn3M7aod7VmQgZO0MHVsaG9sJc5rv_Pp_l0d0TvkujifLpFq2Ile_aem_R7mzMj0BmC3dVdnV1_wiUA" target="_blank" rel="noopener">Estrada de Eiras nº 67, Coimbra, Portugal, 3025-069</a>
-          <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
-        </div>
-      </div>
-      <div>
-        <h4>Morada · Sandelgas</h4>
-        <div class="footer-links">
-          <span>Rua do Chorão, 3020-485 São Martinho da Árvore</span>
-        </div>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <div class="footer-links">
-          <span>+351 963 171 520 · Tirsa</span>
-        </div>
-      </div>
-    </div>
-    <div class="footer-grid" style="margin-top:-16px;">
-      <div>
-        <h4>Redes sociais</h4>
-        <div class="footer-links" style="flex-direction:row;gap:20px;">
-          <a href="https://www.instagram.com/oninhodamariazinha/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.facebook.com/ONinhodaMariazinha" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © 2026 Associação O Ninho da Mariazinha. Todos os direitos reservados. · <a href="privacidade.html" style="text-decoration:underline;">Política de Privacidade</a>
-    </div>
-  </div>
-</footer>
+
+<div id="footer-placeholder"></div>
+
 <div class="modal-overlay" id="modal-apoiar" aria-hidden="true">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-apoiar-title">
     <button type="button" class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
@@ -195,7 +157,7 @@
     <p class="modal-note">Para conhecer todas as formas de apoio em detalhe, visite a nossa <a href="apoiar.html">página de Apoie-nos</a>.</p>
 
     <div class="modal-contact-footer">
-      <p class="modal-note" style="margin-top:0;">Tem dúvidas ou questões? Contacte-nos:</p>
+      <p class="modal-note">Tem dúvidas ou questões? Contacte-nos:</p>
       <div class="modal-contact-links">
         <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a>
         <a href="https://wa.me/351963171520" target="_blank" rel="noopener">WhatsApp: +351 963 171 520</a>
@@ -208,7 +170,7 @@
     <button type="button" class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
     <h3 id="modal-voluntario-title">Quero ser voluntário</h3>
     <p class="modal-lead">O primeiro passo é preencher um formulário breve, para conhecermos a sua disponibilidade e áreas de interesse. Depois de enviar, a nossa equipa entrará em contacto consigo.</p>
-    <a class="btn btn-solid" href="https://forms.gle/SUBSTITUIR-PELO-LINK-DO-FORMULARIO-GOOGLE" target="_blank" rel="noopener" style="width:100%;justify-content:center;">Preencher formulário</a>
+    <a class="btn btn-solid" href="https://forms.gle/SUBSTITUIR-PELO-LINK-DO-FORMULARIO-GOOGLE" target="_blank" rel="noopener" class="btn-block">Preencher formulário</a>
     <p class="modal-note">Prefere falar diretamente connosco? Escreva para <a href="mailto:geral@ninhodamariazinha.pt">geral@ninhodamariazinha.pt</a> ou envie mensagem para o WhatsApp <a href="https://wa.me/351963171520" target="_blank" rel="noopener">+351 963 171 520</a>.</p>
   </div>
 </div>
