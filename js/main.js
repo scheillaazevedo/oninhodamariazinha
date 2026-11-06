@@ -112,17 +112,17 @@
     }
   });
 
-  // ---------- Toggle Pessoa singular / Empresa (modal Apoie-nos) ----------
+  // ---------- Toggles: Pessoa singular / Empresa (modal Apoie-nos) e tipos de parceiro ----------
   document.querySelectorAll('.toggle-group').forEach(group => {
     const btns = group.querySelectorAll('.toggle-btn');
-    const modal = group.closest('.modal');
+    const scope = group.closest('[data-toggle-scope]') || group.closest('.modal');
     btns.forEach(btn => {
       btn.addEventListener('click', () => {
         btns.forEach(b => { b.classList.remove('is-active'); b.setAttribute('aria-selected', 'false'); });
         btn.classList.add('is-active');
         btn.setAttribute('aria-selected', 'true');
         const target = btn.getAttribute('data-toggle-target');
-        modal.querySelectorAll('.toggle-panel').forEach(p => {
+        scope.querySelectorAll('.toggle-panel').forEach(p => {
           p.hidden = p.getAttribute('data-panel') !== target;
         });
       });
